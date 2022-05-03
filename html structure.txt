@@ -1,0 +1,30 @@
+html structure
+
+<!DOCTYPE html>
+<html> 큰 틀의 양식
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" /> - css와 연결
+</head>
+
+<body>
+구현하는 부분
+</body>
+
+</html>
+
+html tags
+1. <div> </div> : 영역을 나누어주는 태그
+2. <p> </p> : 영역나누니 + 문단과 같은 높이 조절폭이 크다
+3. <img/> : 웹사이트에 이미지 넣어줌
+<img src="이미지 주소"/> = src : 이미지 주소를 가져온다
+4. <input /> : 검색창과 같은 글상자
+<input type="" /> : type에 따라 받을 수 있는 데이터의 종류 결정
+ex) 
+<input type="text" /> : 쓸수 있는 text 값은 모두 받겠다.
+<input type="password" /> : 비밀번호 입력과 같은 ***으로 입력과 같이 이용
+5. <button> </button> : 버튼을 만드어 준다 / 로그인 버튼 만들어보기
+6. <a href="가고싶은 주소"> </a> : 하이퍼 링크 태그
