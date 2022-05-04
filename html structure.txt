@@ -10,13 +10,18 @@ html structure
   <link href="style.css" rel="stylesheet" type="text/css" /> - css와 연결
 </head>
 
+기본 head tags
+1.<meta> : 웹서버와 브라우저사이의 정보정의 - 문서 자체의 특성
+2.<title> </title> : 웹사이트가 열릴 때 상단의 tab에 이름 게시
+3. <link> : 필요한 스타일 아이콘 등 외부문서를 html 문서에 연결
+
 <body>
 구현하는 부분
 </body>
 
 </html>
 
-html tags
+주로사용 되는 html tags
 1. <div> </div> : 영역을 나누어주는 태그
 2. <p> </p> : 영역나누니 + 문단과 같은 높이 조절폭이 크다
 3. <img/> : 웹사이트에 이미지 넣어줌
@@ -28,3 +33,11 @@ ex)
 <input type="password" /> : 비밀번호 입력과 같은 ***으로 입력과 같이 이용
 5. <button> </button> : 버튼을 만드어 준다 / 로그인 버튼 만들어보기
 6. <a href="가고싶은 주소"> </a> : 하이퍼 링크 태그
+7. <strong> </strong> : 글씨를 두껍게 강조
+8. <ul> </ul> : 순서가 없는 리스트 만드는 태그
+9. <li> </li> : 만들어진 리스트 속 항목을 생성하는 태그
+10. <table> </table> : 표 삽입 태그
+- tr : table row : 가로줄 만들기
+- td : table data : 셀 만들기
+- th : table head : 표의 제목
+11.<u> </u> : 밑줄 태그(underline)
