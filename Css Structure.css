@@ -1,0 +1,151 @@
+Css structure
+: Html에 style을 부여해준다.
+
+1. Html에 직접 부여해준다
+div{
+
+  color:red;
+}
+
+2. id를 이용해서 적용 - 하나의 스타일만 적용가능 / javascript에서 많이 사용
+#new-style{
+  color:red;
+}
+
+<div id="new-style">
+
+3. class 이용 : 사용 빈도수가 높음
+.new style(class 명){
+
+  color:red;
+}
+
+html 태그 뒤 class 삽입
+
+4. html tag에 스타일 적용
+p{ (모든 p tag에 스타일 적용)
+  color=red;
+}
+
+Css의 properties : 종류가 많음 - 구글링
+
+실습
+.red {
+  color:red; (색)
+  background-color:yellow; (배경색)
+  text-align: center; (위치)
+}
+
+.border-blue{
+  border: 1px solid blue; (테두리)
+}
+
+.img-size{ (크기)
+  width: 200px; (너비)
+  height: 200px; (높이)
+}
+
+.margin-space {  (바깥쪽공간의 여백)
+  margin-top:40px;
+  margin-left:100px;
+  margin-bottom:40x;
+}
+
+.padding-space{ (안쪽공간의 여백)
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+복합선택자
+(class 뿐만아니라 tag, id 등 2개의 성분으로 표현가능)
+p.new-style {
+  color: red;
+}
+// p tag에 있는 class가 new-style인 tag 만 선택해서 적용
+
+div .new-style{
+  color:red;
+}
+// div(띄어쓰기) .new-style 는 div 태그 아래에 있는 모든 자손 tag 중
+스타일이 .new-style을 가진 태그만 선택해서 적용 
+
+div>.new-style {
+  color: red;
+}
+// > 사용 시 div tag 바로 밑의 자손 tag가 .new-style 을 포함할 시 적용
+
+실습1
+.box {
+  border: 50px solid red;
+  width: 200px;
+  margin: 20px;
+}
+
+.box-green {
+  border: 50px solid green;
+  width: 200px;
+  margin: 20px;
+}
+
+.box-blue {
+  border: 50px solid #2c3e50;
+  width: 200px;
+  margin: 20px;
+}
+
+.box-ps {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.bss {
+  box-sizing: content-box;
+}
+/* 효율적인 코딩
+1. box 하나라는 개념에 공통적 특성 적용
+2. green, blue라는 단에 각각의 색을 부여
+*/
+
+실습2
+h1 {
+  color: #9b59b6
+}
+
+.sub-header {
+  color: #2980b9
+}
+
+p {
+  font-size: 16px;
+  font-style: italic; (글씨체)
+  font-family: Verdana; (글꼴)
+}
+
+p::first-letter { (가장 앞 문자의 변형)
+  font-size: 200%;
+  color: #2980b9
+}
+
+h1::before { (특정위치 앞에 삽입)
+  content: "Topic: "
+}
+
+h1::first-child { (첫번째 자손의 변형)
+  text-align: center;
+}
+
+
+.challenge2 {
+  background-color: #fff;
+  background-image:
+    linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
+    linear-gradient(#eee .1em, transparent .1em);
+  background-size: 100% 1.2em;
+  text-indent: 10%; (들여쓰기)
+}
+/*
+들여쓰기 : text-indent: 10%;
+본문 전체 이동 : padding-left : 10%;
+*/
