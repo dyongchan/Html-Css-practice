@@ -1,0 +1,38 @@
+Css Properties
+
+1. 원하는 위치에 항목 배치
+/*position, float, display
+위치에 배치할 때, border을 이용하여 항목에 테두리를 그리고 설계하면 편리하다.
+*/
+
+- 속성 float
+왼쪽, 오른쪽 정렬시 많이 사용
+.(class 명){
+  float: left; (왼쪽정렬)
+  float: right; (오른쪽정렬)
+}
+
+  2. <a> tag 밑줄제거
+  .(class 명){
+  text-decoration: none;
+  }
+
+  3. <a> tag 속성
+  .(class 명):(속성명){
+    /*마우스 오버 시 속성*/
+    a:link { (링크 방문 전)
+        text-decoration: none;
+      }
+    
+      a:visited { (링크 방문 후)
+        text-decoration: none;
+      }
+    
+      a:hover { /*마우스 오버 시 속성*/
+        text-decoration: underline; (마우스 오버시 밑줄 발생)
+      }
+    
+      a:active {
+        text-decoration: underline; (마우스 클릭 시 밑줄 발생)
+      }
+  }
