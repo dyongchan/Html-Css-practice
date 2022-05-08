@@ -5,6 +5,19 @@ Css Properties
 위치에 배치할 때, border을 이용하여 항목에 테두리를 그리고 설계하면 편리하다.
 */
 
+- positon : 항목의 위치 지정
+absolute : 절대값 (ex - bottom 0px로 고정 시 바닥에 고정됨)
+
+- display : 요소를 어떻게 보여져야 하는지 결정
+속성 값
+default :
+block - 태그들을 수직으로 배열한다 (한줄에 하나의 태그)
+inline - 한줄에 모든 태그들 배열
+contents -
+flex - 
+...
+/* 페이지의 inspecting 메뉴 속 element.style의 수정으로 변경된 내용 확인가능 */
+
 - 속성 float
 왼쪽, 오른쪽 정렬시 많이 사용
 .(class 명){
